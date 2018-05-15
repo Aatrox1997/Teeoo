@@ -1,0 +1,11 @@
+{
+    "slug": "snow",
+    "name": "snow",
+    "printscreen":"screenshot.png",
+    "author": "往秋不往冬月",
+    "email": "touchitvoid@gmail.com",
+    "description": "简单的线条及彩色.",
+    "web": "www.teeoo.cn",
+    "license": "MIT",
+    "version": "1.0"
+}
