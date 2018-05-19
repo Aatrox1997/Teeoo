@@ -142,8 +142,3 @@ Route::get("/Teeoo",function (){
         )
     ));
 });
-
-
-Route::any("off/{all}",function (){
-    return view("App");
-})->where(["all"=>"(.*?)"]);

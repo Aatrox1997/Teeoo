@@ -7,20 +7,6 @@
 ### 新 博 客,自 豪 的 采 用 了 自 己 开 发 的 博 客！ 
 	
 
-
-### 后台预览
-
-![](https://teeoo.cn/uploads/article/20180510/2018-05-10-09-23-51-5af40fa722516.png)
-![](https://teeoo.cn/uploads/article/20180510/2018-05-10-09-24-00-5af40fb0e93e2.png)
-![](https://teeoo.cn/uploads/article/20180510/2018-05-10-09-24-11-5af40fbb74121.png)
-![](https://teeoo.cn/uploads/article/20180510/2018-05-10-09-24-18-5af40fc288ce4.png)
-
-### 前台预览
-
-![](https://teeoo.cn/uploads/article/20180510/2018-05-10-09-29-35-5af410ff8fdae.jpg)
-![](https://teeoo.cn/uploads/article/20180510/2018-05-10-09-29-43-5af41107ea649.jpg)
-![](https://teeoo.cn/uploads/article/20180510/2018-05-10-09-29-52-5af411109510c.jpg)
-
 ### 食用方法
 
 - 先进行克隆
@@ -48,10 +34,10 @@
     - MAIL_DRIVER=smtp
     - MAIL_HOST=smtp.163.com
     - MAIL_PORT=465
-    - MAIL_USERNAME=*************
-    - MAIL_PASSWORD=*************
+    - MAIL_USERNAME=15082747556@163.com
+    - MAIL_PASSWORD=15082747556a
     - MAIL_ENCRYPTION=ssl
-    - MAIL_FROM_ADDRESS=**************
+    - MAIL_FROM_ADDRESS=15082747556@163.com
     - MAIL_FROM_NAME=Teeoo
     
   - #### 站点配置信息

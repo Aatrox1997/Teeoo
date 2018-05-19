@@ -120,8 +120,6 @@ return [
     */
 
     'providers' => [
-        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
-        Dingo\Api\Provider\LaravelServiceProvider::class,
         Facuz\Theme\ThemeServiceProvider::class,
         Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
         Mpociot\LaravelTestFactoryHelper\TestFactoryHelperServiceProvider::class,
@@ -224,9 +222,6 @@ return [
         'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
         // or
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
-
-        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
-        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
 
     ],
 
