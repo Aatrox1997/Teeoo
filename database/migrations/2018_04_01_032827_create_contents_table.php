@@ -21,6 +21,7 @@ class CreateContentsTable extends Migration
             $table->string('slug')->nullable()->comment('别名');
             $table->string('cover')->nullable()->comment('封面');
             $table->string('summary')->nullable()->comment('概要');
+//            $table->text('text')->nullable()->comment('md');
             $table->text('text')->nullable()->comment('内容');
             $table->text('html')->nullable()->comment('解析内容');
             $table->integer('view_count')->default(0)->unsigned()->comment('浏览次数');

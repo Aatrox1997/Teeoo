@@ -8,10 +8,10 @@ use App\Model\Metas;
 use App\Model\Tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use phpDocumentor\Reflection\Types\Null_;
 
 class ContentController extends Controller
 {
+
     /**
      * Notes:文章列表页
      * User: Teeoo
@@ -77,7 +77,7 @@ class ContentController extends Controller
             $ids = array();
             foreach ($tags as $v) {
                 //不存在就添加 存在直接返回id
-                $res = Tag::firstOrCreate(["name" => $v]);
+                $res = Tag::firstOrCreate(["name" => $v, "color" => collect(["black", "dark", "primar", "link", "info", "succes", "warnin", "danger"])->random()]);
                 $ids[] = $res->id;
             }
             //添加关联表信息
@@ -110,7 +110,7 @@ class ContentController extends Controller
         if ($request->isMethod('post')) {
             //判断是否允许评论
             $criticism = array_key_exists("criticism", $request->post()) ? 1 : 2;
-            $input = $request->except(['_token', 'cover','tags', 'criticism', 'my-editormd-markdown-doc', 'my-editormd-html-code']);
+            $input = $request->except(['_token', 'cover', 'tags', 'criticism', 'my-editormd-markdown-doc', 'my-editormd-html-code']);
             $content = Content::where("id", "=", $id)->update(array_merge($input, [
                 "criticism" => $criticism,
                 "html" => $request->post('my-editormd-html-code'),
@@ -127,7 +127,7 @@ class ContentController extends Controller
                 $ids = array();
                 foreach ($tags as $v) {
                     //不存在就添加 存在直接返回id
-                    $res = Tag::firstOrCreate(["name" => $v]);
+                    $res = Tag::firstOrCreate(["name" => $v, "color" => collect(["black", "dark", "primar", "link", "info", "succes", "warnin", "danger"])->random()]);
                     $ids[] = $res->id;
                 }
                 //使用集合取出所有的id

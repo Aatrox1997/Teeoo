@@ -4,13 +4,13 @@
 
 ------------
 
-### 新 博 客,自 豪 的 采 用 了 自 己 开 发 的 博 客！ 
-	
+### 新 博 客,自 豪 的 采 用 了 自 己 开 发 的 博 客！
+
 
 ### 食用方法
 
 - 先进行克隆
-    >   git clone https://github.com/iatw/Teeoo.git
+    >   git clone https://github.com/Teeoo/Teeoo.git
 - 解决依赖
 	>	composer install
 - 建立.env文件
@@ -21,7 +21,7 @@
   - #### 主题和程序版本号
     - APP_THEME=snow
     - Edition=v1.0
-    
+
   - #### 数据库配置信息
     - DB_CONNECTION=mysql
     - DB_HOST=127.0.0.1
@@ -29,17 +29,17 @@
     - DB_DATABASE=teeoo
     - DB_USERNAME=root
     - DB_PASSWORD=
-    
+
   - #### 邮件配置信息
     - MAIL_DRIVER=smtp
     - MAIL_HOST=smtp.163.com
     - MAIL_PORT=465
-    - MAIL_USERNAME=15082747556@163.com
-    - MAIL_PASSWORD=15082747556a
+    - MAIL_USERNAME=******
+    - MAIL_PASSWORD=******
     - MAIL_ENCRYPTION=ssl
-    - MAIL_FROM_ADDRESS=15082747556@163.com
-    - MAIL_FROM_NAME=Teeoo
-    
+    - MAIL_FROM_ADDRESS=*****
+    - MAIL_FROM_NAME=*****
+
   - #### 站点配置信息
     - SITE_KEY=这里填写你博客的keyword
     - SITE_HOST = 这里天下你博客的域名
@@ -71,7 +71,7 @@
 
     Options +FollowSymLinks
     RewriteEngine On
-    
+
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
@@ -83,7 +83,7 @@
     location / {
         try_files $uri $uri/ /index.php?$query_string;
     }
-	
+
 当然，如果使用 Homestead 或 Valet 的话，以上配置已经为你配置好，无需额外操作。
 
 > 到了这里如果不出意外的话程序应该能正常跑起来了 ,当然你也可以使用laravel内置的web服务器:`php artisan serve`来运行程序,本地推荐这样做,服务器上还是推荐Nginx
@@ -140,5 +140,5 @@
 	-	更新READNE.md
 - Teeoo 2018-04-21
    	-	移植**@贫困的蚊子**的Candy-Rebirth主题
-       
+
 

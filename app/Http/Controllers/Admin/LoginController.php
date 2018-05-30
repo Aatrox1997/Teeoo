@@ -35,7 +35,7 @@ class LoginController extends Controller
         //        dump(\Auth::attempt($input));
         if (\Auth::attempt($input)) {
             // 认证通过...
-            return redirect("/Admin/");
+            return redirect("/Admin/index");
         }else{
             $this->index();
         }

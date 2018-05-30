@@ -1,0 +1,110 @@
+html {
+    line-height: 1.15;
+}
+
+body, html {
+    min-height: 100%;
+}
+
+body {
+    font-family: Microsoft YaHei, Helvetica Neue, Helvetica, STXihei, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.main_te {
+    margin-top: 15px;
+}
+
+.p_te {
+    border-bottom: #0a001f;
+}
+
+.p_p {
+    opacity: .7;
+}
+
+.articles {
+    margin: 5rem 0;
+    margin-top: -90px;
+}
+.mdui-valign > .mdui-dialog {
+    max-width: 360px;
+}
+
+.article {
+    color: #4b4b4b;
+    font-size: 17px;
+}
+
+.column > .card {
+    box-shadow: 0 0px 0px rgba(10, 10, 10, 0.1), 0 0 0 0px rgba(10, 10, 10, 0.1)
+}
+
+code > span {
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-size: 18px;
+}
+
+.code-toolbar > pre {
+    padding: 14px 14px 14px 53px !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .mdui-card {
+        max-width: 700px;
+        margin-left: 300px;
+    }
+
+    .h1 {
+        margin-left: 300px;
+    }
+
+}
+
+@media screen and(min-width: 960px) and (max-width: 1199px) {
+    .mdui-card {
+        max-width: 700px;
+        margin-left: 300px;
+    }
+
+    .h1 {
+        margin-left: 300px;
+    }
+}
+
+@media screen and(min-width: 768px) and (max-width: 959px) {
+    .mdui-card {
+        max-width: 700px;
+    }
+}
+
+@media screen and(min-width: 480px) and (max-width: 767px) {
+    .mdui-card {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .mdui-card {
+        max-width: 700px;
+        margin-left: 0px;
+    }
+
+    .h1 {
+        margin-left: 0px;
+    }
+
+    .articles {
+        margin: 5rem 0;
+        margin-top: 0px;
+    }
+
+    .column {
+        padding: 0px;
+    }
+}
+

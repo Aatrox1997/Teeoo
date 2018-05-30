@@ -16,7 +16,7 @@ class Usercheck
     public function handle($request, Closure $next)
     {
         if (!\Auth::check()){
-            return redirect("/Admin/login/");
+            return redirect("/Admin/login/index");
         }
         return $next($request);
     }

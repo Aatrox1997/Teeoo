@@ -35,9 +35,8 @@ Route::group(['middleware' => 'web', 'namespace' => 'Home'], function () {
 
 //不需要验证的路由
 Route::group(['prefix' => 'Admin', 'namespace' => 'Admin'], function () {
-    Route::group(['prefix' => 'login'], function () {
+    Route::group(['prefix' => 'login/'], function () {
         // 登录页面
-        Route::get('/', 'LoginController@index');
         Route::get('index', 'LoginController@index');
         // 后台登录
         Route::post('login', 'LoginController@login');
@@ -49,6 +48,7 @@ Route::group(['prefix' => 'Admin', 'namespace' => 'Admin'], function () {
 //Admin
 Route::group(["namespace" => "Admin", "prefix" => "Admin", "middleware" => "usercheck"], function () {
     //首页
+    Route::get("/", "AdminController@index");
     Route::get("index", "AdminController@index");
     Route::get("baic", "AdminController@baic");
     //分类

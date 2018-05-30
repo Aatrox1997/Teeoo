@@ -16,6 +16,8 @@ class CreateTagsTable extends Migration
         Schema::create('tags', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->comment('标签名称');
+            $table->string('color')->default("black")->comment('标签颜色');
+            $table->string('hot')->nullable()->comment('标签热度');
             $table->timestamps();
         });
         Schema::create('content_tag', function (Blueprint $table) {
